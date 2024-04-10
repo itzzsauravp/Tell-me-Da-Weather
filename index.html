@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "theme-toggle">
+        <div class="toggle-btn">
+            
+        </div>
+    </div>
+    <div class="card" id="card">
+        <div class="search">
+            <input id="input-field" type="text" placeholder="Enter city name..." spellcheck="false" autocomplete="off">
+            <button id="my-btn"><img src="Images/search.png" alt="search-icon"></button>
+        </div>
+        <div class="error-display">* Sorry!! Couldn't Retrive The Data, Make Sure The Name Of City Is Correct *</div>
+        <div class="weather">
+            <img src="Images/default_weather.png" class="weather-icon" alt="weather-icon">
+            <h1 class="temp"><span>°C</span></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="Images/humidity.png" alt="humidity-icon">
+                    <div>
+                        <p class="max-temp"></p>
+                        <p>Max Temp</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="Images/wind.png" alt="wind-icon">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --input-field-color:white;
+    --search-button-color:white;
+    --text-color: white;
+    --text-color-input: black;
+    --bg-color: #222;
+    --card-border-color: white;
+    --button-switch-color: #222;
+    --button-bg-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    transition: all .4s ease;
+}
+
+body.dark {
+    --input-field-color: #222;
+    --search-button-color:white;
+    --text-color: white;
+    --text-color-input: white;
+    --bg-color: white;
+    --card-border-color: #222;
+    --button-switch-color: white;
+    --button-bg-color:#222;
+
+}
+
+#theme-toggle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    right: 20px;
+    background-color: var(--button-bg-color) ;
+    border-radius: 20px;
+    height: 30px;
+    width: 60px;
+    border: none;
+    outline: none;
+    transition: background-color .4s ease;
+}
+
+
+.toggle-btn {
+    position: absolute;
+    right: 35px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    /* how to add the transition for the button position change here */
+    background-color: var(--button-switch-color);
+
+}
+
+body.dark .toggle-btn {
+    left: 35px;
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 1px solid var(--card-border-color);
+    color: var(--text-color);
+    margin: 20px auto 0px auto;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+
+.very-hot-day {
+    background: rgb(109,58,144);
+    background: linear-gradient(74deg, rgba(109,58,144,1) 0%, rgba(253,29,29,1) 38%, rgba(252,176,69,1) 97%);
+}
+
+.chill-day {
+    background: rgb(2,0,36);
+    background: linear-gradient(167deg, rgba(2,0,36,1) 0%, rgba(149,207,209,1) 100%);
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: var(--input-field-color);
+    color: var(--text-color-input);
+    padding: 10px 25px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    border: 1px solid var(--card-border-color);
+    background-color: var(--search-button-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease;
+}
+
+.search button img {
+    height: 20px;
+    width: 20px;
+}
+
+.error-display {
+    display: none;
+    margin-top: 30px;
+    color: red;
+    font-size: 0.85rem;
+}
+
+.weather {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.weather h1 {
+    margin: 30px 0px;
+    font-size: 4rem
+}
+
+.weather .weather-icon {
+    height: 200px;
+    width: 200px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.details {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details img {
+    height: 40px;
+    width: 40px;
+}
+
+.col{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col img{
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.max-temp, .wind {
+    font-size: 28px;
+}

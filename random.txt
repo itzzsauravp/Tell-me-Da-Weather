@@ -1,0 +1,40 @@
+{
+    "coord": {
+        "lon": -89.1028,
+        "lat": 30.438
+    },
+    "weather": [
+        {
+            // Weather data goes here
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 71.94,
+        "feels_like": 72.73,
+        "temp_min": 70.95,
+        "temp_max": 73.38,
+        "pressure": 1014,
+        // More main weather data goes here
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 10.36,
+        "deg": 140
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1712675098,
+    "sys": {
+        "type": 2,
+        "id": 2015175,
+        "country": "US",
+        "sunrise": 1712662510,
+        "sunset": 1712708403
+    },
+    "timezone": -18000,
+    "id": 4429197,
+    "name": "Landon",
+    "cod": 200
+}
