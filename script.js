@@ -1,10 +1,6 @@
-// const apiKey = "d29e9b9ae3c9e535818b8e7a094fea13";
-// const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=kathmandu&appid=d29e9b9ae3c9e535818b8e7a094fea13`;
-
-
 const checkWeather = async () => {
     const cityName = document.getElementById('input-field').value;
-    const apiKey = "d29e9b9ae3c9e535818b8e7a094fea13";
+    const apiKey = window.myApiKey;
     const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${cityName}&appid=${apiKey}`;
     
     const card = document.getElementById('card');
